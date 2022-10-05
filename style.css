@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background-image: url('https://4.bp.blogspot.com/-PXJFWiiuBJA/UWph-Sahp0I/AAAAAAAATNU/xjfLzctQ8pg/s1600/lucid_sunset-1080.jpg');
+    font-family:'Poppins',sans-serif;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 100vh;
+    background-size: cover;
+
+}
+
+.container{
+    padding: 20px 70px;
+    color:#fff;
+
+}
+.current-info{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.date-container{
+    font-size: 20px;
+    
+}
+.date-container .time{
+    font-size: 50px;
+
+}
+
+.date-container #am-pm{
+    font-size: 30px;
+    margin: 20px;
+
+
+}
+.date-container .date{
+    font-size: 30px;
+
+}
+
+.place-container {
+    text-align: end;
+}
+
+.place-container .time-zone{
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.place-container .country{
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.current-info .other{
+    display:flex;
+    flex-direction: column;
+    background: rgba(24, 24, 27, 0.6);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    border: 1px solid #eee;
+}
+
+.current-info .other .weather-item{
+    display: flex;
+    justify-content: space-between;
+}
+.future-fourcast{
+   background-color:rgba(24, 24, 27, 0.8);
+   padding:25px;
+   position:fixed;
+   bottom:o;
+   display:flex;
+   color:white;
+   width:100%;
+   text-align:center;
+   justify-content:center;
+   border: 1px solid #eee;
+   
+}
+.future-fourcast .today{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.future-fourcast .today .day{
+    padding: 5px 15px;
+    background:#3c3c44;
+    border-radius:50px;
+    text-align:center;
+    flex-direction:column;
+}
+.future-fourcast .today .temp{
+    font-size:20px;
+    padding-top: 15px;
+}
+.future-fourcast .weather-fourcast{
+    display:flex;
+}
+.weather-fourcast .weather-fourcast-item{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    margin: 0 20px;
+    border:1px solid #eee;
+    border-radius:10px;
+    padding:15px;
+    background: rgba(0, 0, 0, 0.2)
+}
+.weather-fourcast .weather-fourcast-item .day{
+    padding:5px 15px;
+    background:#3c3c44;
+    border-radius:50px;
+    text-align:center;
+}
+.weather-fourcast .weather-fourcast-item .temp{
+    font-weight:100;
+
+}
+@media only screen and ( max-width:730px){
+    .container{
+        padding:20px;
+    }
+    .future-fourcast{
+        justify-content:start;
+        align-items:none;
+        overflow-y: scroll;
+
+    }
+    .future-fourcast .tody .temp{
+        font-size:23px;
+    }
+
+    .date-container .time{
+        font-size:50px;
+    }
+    .date-container #am-pm{
+        font-size:20px;
+    }
+
+    .date-container .date{
+        font-size:20px; 
+    }
+    .place-container{
+        text-align:end;
+        margin-top:15px;
+    }
+
+    .place-container .time-zone{
+        font-size:20px;
+    }
+
+    .current-info{
+        padding:12px;
+    }
+
+    .current-info .other .weather-item{
+        font-size:14px;
+    }
+
+}
+
+@media  only screen  and (max-width:1000px){
+    .future-fourcast{
+        justify-content:start;
+        align-items:none;
+        overflow-x: scroll;
+
+    }
+}
+    
